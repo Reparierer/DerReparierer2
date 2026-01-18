@@ -1,0 +1,5 @@
+*.svg
+.idea/
+_build/
+Makefile
+dictionary.dic
