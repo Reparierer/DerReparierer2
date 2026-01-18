@@ -16,9 +16,11 @@ steps:
       - sphinx-build . _build/
   - name: publish
     image: bitnami/git
-    environment:
-      # secrets must be set in Woodpecker configuration
-      secrets: [mail, cbtoken]
+    settings:
+          MAIL:
+            from_secret: mail
+          CBTOKEN:
+            from_secret: cbtoken
     commands:
       # config git to commit and push changes:
       - git config --global --add safe.directory $CI_WORKSPACE/public
