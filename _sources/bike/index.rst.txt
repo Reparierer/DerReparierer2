@@ -6,6 +6,7 @@ Bike
    :caption: Contents:
 
    chain_lock_abus_cover_replacement/readme.md
+   internal_gear_hub_alfine_11_braking/readme.md
    led_lamp/readme.md
    rear_light_AXA_K980/readme.md
    rear_light_trelock/readme.md
