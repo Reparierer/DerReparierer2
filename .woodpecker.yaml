@@ -20,7 +20,7 @@ steps:
       # secrets must be set in Woodpecker configuration
       secrets: [mail, cbtoken]
     commands:
-      # config git to commit and push changes
+      # config git to commit and push changes:
       - git config --global --add safe.directory $CI_WORKSPACE/public
       - echo safe dir set successfully
       - git config --global user.email $MAIL
