@@ -15,7 +15,7 @@ steps:
       - ls
       - sphinx-build . _build/
   - name: publish
-    image: bitnami/git:2
+    image: bitnami/git
     environment:
       # secrets must be set in Woodpecker configuration
       secrets: [mail, cbtoken]
