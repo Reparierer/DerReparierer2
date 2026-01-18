@@ -1,0 +1,45 @@
+name: "Generate docs for GitHub pages"
+
+on:
+  push:
+    branches: [ main]
+  pull_request:
+    branches: [ main ]
+  # Run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+    - uses: actions/checkout@v4
+    - name: Install and run spell check
+      run: |
+        sudo apt install aspell-en
+        pip install pyspelling
+        pyspelling
+    - name: Install sphinx, build documentation
+      run: |
+        echo "Start Pipeline"        
+        pip install --upgrade pip
+        pip install sphinx sphinx-rtd-theme myst-parser
+        python3 generate_index.py
+        ls
+        sphinx-build . _build/
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: html-docs
+        path: _build/
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      if: github.ref == 'refs/heads/master'
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: _build/
