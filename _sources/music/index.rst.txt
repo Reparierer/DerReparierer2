@@ -5,4 +5,5 @@ Music
    :maxdepth: 1
    :caption: Contents:
 
+   guitar_tube_amp_engl_gigmaster_30/readme.md
    led_headlights_stairville_par_56/readme.md
