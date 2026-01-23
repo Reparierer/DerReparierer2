@@ -3,3 +3,4 @@
 _build/
 Makefile
 dictionary.dic
+.comments/
