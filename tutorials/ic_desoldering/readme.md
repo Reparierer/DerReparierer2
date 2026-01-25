@@ -35,3 +35,6 @@ By using solder wick.
 
 ![](figures/05.png)
 
+The next figures shows removed component and the removed component pins from the PCB.
+
+![](figures/06.png)
