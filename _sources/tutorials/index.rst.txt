@@ -8,4 +8,5 @@ Tutorials
    capacitors/readme.md
    diodes/readme.md
    discharging_box/readme.md
+   ic_desoldering/readme.md
    mosfets/readme.md

@@ -1,0 +1,159 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Successful desoldering of an IC with multiple pins &mdash; derReparierer 2023 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=9edc463e" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=a4664895"></script>
+      <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="MOSFETs in switched-mode power supplies (SMPS)" href="../mosfets/readme.html" />
+    <link rel="prev" title="Discharging box" href="../discharging_box/readme.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            derReparierer
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Repair Categories:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../readme.html">Welcome! All about repairing electronics.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bike/index.html">Bike</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../car/index.html">Car</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../computers/index.html">Computers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../consumer_electronics/index.html">Consumer Electronics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../household_devices/index.html">Household Devices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kitchen/index.html">Kitchen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../misc/index.html">Misc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../music/index.html">Music</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../smartphones/index.html">Smartphones</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Tutorials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../capacitors/readme.html">Capacitors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../diodes/readme.html">Diodes in switched-mode power supplies (SMPS)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../discharging_box/readme.html">Discharging box</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Successful desoldering of an IC with multiple pins</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#description-of-failure">Description of failure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#procedure-for-desoldering">Procedure for desoldering</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../mosfets/readme.html">MOSFETs in switched-mode power supplies (SMPS)</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">derReparierer</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Tutorials</a></li>
+      <li class="breadcrumb-item active">Successful desoldering of an IC with multiple pins</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="successful-desoldering-of-an-ic-with-multiple-pins">
+<h1>Successful desoldering of an IC with multiple pins<a class="headerlink" href="#successful-desoldering-of-an-ic-with-multiple-pins" title="Link to this heading"></a></h1>
+<section id="description-of-failure">
+<h2>Description of failure<a class="headerlink" href="#description-of-failure" title="Link to this heading"></a></h2>
+<p>A defective IC must be replaced.
+The challenge is to remove the defective component, which will be described in this article.</p>
+<p><img alt="" src="../../_images/01.png" /></p>
+</section>
+<section id="procedure-for-desoldering">
+<h2>Procedure for desoldering<a class="headerlink" href="#procedure-for-desoldering" title="Link to this heading"></a></h2>
+<p>The goal is to desolder the component with multiple pins in order to insert a new component.
+The old component will be destroyed in the process, as it is already defective.
+The instructions can be followed using standard tools; no special aids (such as special soldering tips) are required.</p>
+<p><strong>1. Cut the pins from the component</strong><br />
+Since not all pins can be heated at the same time to remove the component, the individual pins on the component are cut off.
+It makes sense, for example, not to cut off two pins, as the these pins can then be pulled out together with the component in the next step.</p>
+<p><img alt="" src="../../_images/02.png" /></p>
+<p><strong>2. Remove the component</strong><br />
+First, one pin is heated and the component is pulled out of the through-hole by tilting it.
+Then the second pin is heated and the component is removed completely.</p>
+<p><img alt="" src="../../_images/03.png" /></p>
+<p><strong>3. Remove the Pins</strong><br />
+The remaining pins that are still stuck in the circuit board are removed with pliers while heating.
+This is done separately for each pin, what can be done easily using standard tools.</p>
+<p><img alt="" src="../../_images/04.png" /></p>
+<p><strong>4. Remove the solder from the pin holes.</strong><br />
+By using solder wick.</p>
+<p><img alt="" src="../../_images/05.png" /></p>
+<p>The next figures shows removed component and the removed component pins from the PCB.</p>
+<p><img alt="" src="../../_images/06.png" /></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../discharging_box/readme.html" class="btn btn-neutral float-left" title="Discharging box" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../mosfets/readme.html" class="btn btn-neutral float-right" title="MOSFETs in switched-mode power supplies (SMPS)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2026, derReparierer.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
