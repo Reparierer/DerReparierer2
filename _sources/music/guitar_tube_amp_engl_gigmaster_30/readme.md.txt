@@ -46,4 +46,7 @@ This key components are all operational amplifiers (integrated circuits, tubes, 
 The operational amplifier is replaced together with the capacitor and the resistors and the guitar amplifier works!
 The capacitor as well as both resistors close to the amplifier are measured okay, but were probably slightly damaged by factory soldering of the nearby cable connection.
 
+Reichelt order number operation amplifier: `TL072CP`    
+Reichelt order number capacitor: `EB-A 4,7U 63C`
 
+IC desoldering: [Article](../../tutorials/ic_desoldering/readme.md)
