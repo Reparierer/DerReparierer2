@@ -12,6 +12,8 @@ On comparable bikes, the rear wheel spins for significantly longer.
 This bicycle has been riding like this since it was purchased new.
 
 ## Failure investigation
+First, check whether the belt tension is correct. 
+There is an app for android / iOS.
 The Shimano manual points out two different suggestions
  * Internal defect of gear hub, and
  * the cone of the wheel is too tight and blocks the bearings. 
