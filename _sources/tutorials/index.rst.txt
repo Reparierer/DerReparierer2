@@ -10,3 +10,4 @@ Tutorials
    discharging_box/readme.md
    ic_desoldering/readme.md
    mosfets/readme.md
+   plug_in_solar_panels/readme.md
