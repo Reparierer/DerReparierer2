@@ -19,6 +19,6 @@ Now check the following:
  - In this case, it may be advisable to trace the signal path in reverse, starting from the speaker.
  - In this case, a 100 Hz signal with a DC offset is present at one of the two power amplifiers. However, the input is the signal being fed into the system. Consequently, the power amplifier has burned out, and the DC power supply—which is not perfectly smoothed (it has a 100 Hz ripple that does not interfere during normal operation)—is present at the speaker, resulting in the very loud humming noise.
 
-Defective component: `ST TDA2050`, a 32 W hi-fi auto power amplifier
+Defective component: `ST TDA2050`, a 32 W hifi auto power amplifier
 
 The defective component is replaced, and the amplifier works perfectly again.
