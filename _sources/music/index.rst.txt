@@ -5,5 +5,6 @@ Music
    :maxdepth: 1
    :caption: Contents:
 
+   bass_amp_crate_bt50w/readme.md
    guitar_tube_amp_engl_gigmaster_30/readme.md
    led_headlights_stairville_par_56/readme.md
